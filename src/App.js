@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // we imported our loader spinner as image, used down below
 import loader from "./images/loader.svg";
+import Gif from "./Gif";
 
 /*
 const getData = async searchTerm => {
@@ -35,7 +36,9 @@ class App extends Component {
     this.state = {
       searchTerm: " ",
       hintText: "Type above. Hit Enter key to search",
-      gif: null
+      gif: null,
+      //  where we store of gifs
+      gifs: []
     };
   }
   //we can also write ASYNC methods into our components
@@ -57,7 +60,9 @@ class App extends Component {
       this.setState((prevState, props) => ({
         ...prevState,
         // rather than getting 1st result (data[0]) we want randoms
-        gif: randomGif
+        gif: randomGif,
+        //tajke our prev gifs and spread them out, then add our latest new gif in there
+        gifs: [...prevState.gifs, randomGif]
       }));
     } catch (error) {}
   };
@@ -99,6 +104,7 @@ class App extends Component {
       <div className="page">
         <Header />
         <div className="search grid">
+          {/*to get 1 video to show, but we will do several videos below
           {gif && (
             <video
               className="grid-item video"
@@ -106,7 +112,10 @@ class App extends Component {
               loop
               src={gif.images.original.mp4}
             />
-          )}
+          )}*/}
+
+          {/*CREATING/LAYERING LOTS OF VIDEOS, we loop over our arr of gifs from state*/}
+          {this.state.gifs.map(gif => <Gif {...gif} />)}
 
           {/*our stack of images*/}
           <input
