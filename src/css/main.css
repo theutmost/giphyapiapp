@@ -96,8 +96,8 @@ button {
   max-width: 480px;
   max-height: 480px;
   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.68);
-  /*opacity: 0;
-  transform: scale(0) rotate(0deg);*/
+  opacity: 0;
+  transform: scale(0) rotate(0deg);
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   outline: 1px solid transparent;
 }

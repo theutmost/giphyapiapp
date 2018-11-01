@@ -12,7 +12,7 @@ class Gif extends Component {
   }
 
   render() {
-    const loaded = this.state;
+    const { loaded } = this.state;
     const { images } = this.props;
     return (
       <video
