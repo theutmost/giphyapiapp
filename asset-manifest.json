@@ -1,15 +1,15 @@
 {
-  "main.css": "/giphyapiapp/static/css/main.d64d86b0.chunk.css",
-  "main.js": "/giphyapiapp/static/js/main.b216b95c.chunk.js",
-  "main.js.map": "/giphyapiapp/static/js/main.b216b95c.chunk.js.map",
+  "main.css": "/giphyapiapp/static/css/main.dde57ab7.chunk.css",
+  "main.js": "/giphyapiapp/static/js/main.144f5ba3.chunk.js",
+  "main.js.map": "/giphyapiapp/static/js/main.144f5ba3.chunk.js.map",
   "static/js/1.834405f2.chunk.js": "/giphyapiapp/static/js/1.834405f2.chunk.js",
   "static/js/1.834405f2.chunk.js.map": "/giphyapiapp/static/js/1.834405f2.chunk.js.map",
   "runtime~main.js": "/giphyapiapp/static/js/runtime~main.57cf1081.js",
   "runtime~main.js.map": "/giphyapiapp/static/js/runtime~main.57cf1081.js.map",
-  "static/css/main.d64d86b0.chunk.css.map": "/giphyapiapp/static/css/main.d64d86b0.chunk.css.map",
+  "static/css/main.dde57ab7.chunk.css.map": "/giphyapiapp/static/css/main.dde57ab7.chunk.css.map",
   "static/media/loader.svg": "/giphyapiapp/static/media/loader.be00fc4a.svg",
   "static/media/close-icon.svg": "/giphyapiapp/static/media/close-icon.5b9a3ae1.svg",
   "index.html": "/giphyapiapp/index.html",
-  "precache-manifest.ce08dcb1c46f1ebadc4fa0e849400f01.js": "/giphyapiapp/precache-manifest.ce08dcb1c46f1ebadc4fa0e849400f01.js",
+  "precache-manifest.d8d9787eb52a8a8301de804ece61e21b.js": "/giphyapiapp/precache-manifest.d8d9787eb52a8a8301de804ece61e21b.js",
   "service-worker.js": "/giphyapiapp/service-worker.js"
 }

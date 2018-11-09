@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/giphyapiapp/static/js/runtime~main.57cf1081.js"
   },
   {
-    "revision": "b216b95cda26b6393e19",
-    "url": "/giphyapiapp/static/js/main.b216b95c.chunk.js"
+    "revision": "144f5ba32237b81efb2a",
+    "url": "/giphyapiapp/static/js/main.144f5ba3.chunk.js"
   },
   {
     "revision": "834405f2e9effa094619",
     "url": "/giphyapiapp/static/js/1.834405f2.chunk.js"
   },
   {
-    "revision": "b216b95cda26b6393e19",
-    "url": "/giphyapiapp/static/css/main.d64d86b0.chunk.css"
+    "revision": "144f5ba32237b81efb2a",
+    "url": "/giphyapiapp/static/css/main.dde57ab7.chunk.css"
   },
   {
-    "revision": "12c526e18516094cd38d1cf0639ff067",
+    "revision": "7744f300f884a13c4829f1d14ebc573f",
     "url": "/giphyapiapp/index.html"
   }
 ];
