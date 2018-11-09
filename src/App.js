@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // we imported our loader spinner as image, used down below
 import loader from "./images/loader.svg";
 import Gif from "./Gif";
+import clearButton from "./images/close-icon.svg";
 
 /*
 const getData = async searchTerm => {
@@ -12,9 +13,16 @@ const getData = async searchTerm => {
 };
 */
 
-const Header = () => (
+const Header = ({ clearSearch, hasResults }) => (
   <div className="header grid">
-    <h1 className="title"> Giphy App</h1>
+    {/*if we have results, show clear button. otherwise, show the title at top! */}
+    {hasResults ? (
+      <button onClick={clearSearch}>
+        <img src={clearButton} />
+      </button>
+    ) : (
+      <h1 className="title"> Giphy App</h1>
+    )}
   </div>
 );
 
@@ -117,12 +125,29 @@ class App extends Component {
     }
   };
 
+  // Function to CLEAR search by RESETTING the state...
+  clearSearch = () => {
+    this.setState((prevState, props) => ({
+      ...prevState,
+      searchTerm: "",
+      hintText: "",
+      gifs: []
+    }));
+    // here we grab the input THEN focus the cursor back into it (USING REFS)
+    this.textInput.focus();
+  };
+
   render() {
     // const searchTerm = this.state.searchTerm
-    const { searchTerm, gif } = this.state;
+    const { searchTerm, gif, gifs } = this.state;
+    // here we set a var to see is we have any results
+    const hasResults = gifs.length;
+
     return (
       <div className="page">
-        <Header />
+        <Header clearSearch={this.clearSearch} hasResults={hasResults} />
+
+        <h1 onClick={this.clearSearch}>Clear Search</h1>
         <div className="search grid">
           {/*to get 1 video to show, but we will do several videos below
           {gif && (
@@ -144,6 +169,9 @@ class App extends Component {
             placeholder="type something"
             onKeyPress={this.handleKeyPress}
             value={searchTerm}
+            ref={input => {
+              this.textInput = input;
+            }}
           />
         </div>
         {/*here we pass our UserHint all of our state using a spread*/}
